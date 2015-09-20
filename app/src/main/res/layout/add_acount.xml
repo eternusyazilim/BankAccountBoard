@@ -12,14 +12,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Banka Adı"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:layout_marginLeft="10dp"
             android:textSize="30sp"/>
 
         <EditText
             android:id="@+id/bankNameDialog"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/inputbox"
             android:layout_margin="20dp" > <requestFocus /></EditText>
 
 
@@ -34,14 +35,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hesap No"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:layout_marginLeft="10dp"
             android:textSize="30sp"/>
 
         <EditText
             android:id="@+id/customerNoDialog"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/inputbox"
             android:inputType="number"
             android:layout_margin="20dp"/>
     </LinearLayout>

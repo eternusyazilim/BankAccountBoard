@@ -58,11 +58,11 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.AccountViewHolder>
             @Override
             public void onClick(View v) {
                 int sdk = android.os.Build.VERSION.SDK_INT;
-                if (sdk < android.os.Build.VERSION_CODES.HONEYCOMB) {
+                    if (sdk < android.os.Build.VERSION_CODES.HONEYCOMB) {
                     android.text.ClipboardManager clipboard = (android.text.ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
                     clipboard.setText(accounts.get(i).getCustomerNo());
                 } else {
-                    android.content.ClipboardManager clipboard = (android.content.ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
+                        android.content.ClipboardManager clipboard = (android.content.ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
                     android.content.ClipData clip = android.content.ClipData.newPlainText("Müşteri No", accounts.get(i).getCustomerNo());
                     clipboard.setPrimaryClip(clip);
                 }
